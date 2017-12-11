@@ -1,0 +1,44 @@
+$green: #709228;
+$header-color: #495c48;
+$gray: #333333;
+$blue: #00558d;
+
+@font-face {
+    font-family: "Refrigerator";
+    src: url(../fonts/RefrigeratorDeluxe.ttf);
+}
+
+@font-face {
+    font-family: "RefrigeratorDeluxeLight";
+    src: url(../fonts/RefrigeratorDeluxeLight.ttf);
+}
+
+@font-face {
+    font-family: "RefrigeratorDeluxeHeavy";
+    src: url(../fonts/RefrigeratorDeluxeHeavy.ttf);
+}
+
+@font-face {
+    font-family: "RefrigeratorDeluxeBold";
+    src: url(../fonts/RefrigeratorDeluxeBold.ttf);
+}
+
+$desctop-container: 1200px;
+
+$xs-max: 575px;
+$sm-min: 576px;
+$sm-max: 767px;
+$md-min: 768px;
+$md-max: 991px;
+$lg-min: 992px;
+$lg-max: 1199px;
+$xl-min: 1200px;
+
+$xs: (max-width: $xs-max);
+$sm: (min-width: $sm-min) and (max-width: $sm-max);
+$md: (min-width: $md-min) and (max-width: $md-max);
+$lg: (min-width: $lg-min) and (max-width: $lg-max);
+$xl: (min-width: $xl-min);
+$xl2: (min-width: 1439px);
+$xl3: (min-width: 1599px);
+$k2: (min-width: 1919px);

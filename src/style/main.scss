@@ -1,0 +1,203 @@
+@import "partials/variables";
+@import "../../bower_components/normalize.css/normalize.css";
+@mixin font($color, $size) {
+    font-family: "RefrigeratorDeluxeLight";
+    color: $color;
+    font-size: $size;
+}
+
+.container {
+    padding: 0 10%;
+    margin: 0 auto;
+}
+
+.width-img {
+    width: 20px;
+    height: 20px;
+}
+
+.header {
+    display: flex;
+    background-color: #000;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu__item {
+    display: flex;
+    li {
+        a {
+            @include font(#fff, 20px);
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 0 30px;
+            &:hover {
+                color: #ff0317;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+.menu__mycampaigns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mycampaigns {
+    @include font(#000, 30px);
+    text-transform: uppercase;
+    margin-left: 10%;
+    padding: 10px 0;
+}
+
+.menu__plus-hiden-menu {
+    align-items: center;
+    display: flex;
+    background-color: #ff0317;
+}
+
+.plus-img {
+    padding: 0 20px;
+    &:hover {            
+        filter: brightness(0) invert(1);
+        transition: 0.5s;
+    }
+}
+
+
+.menu {
+    display: flex;
+    li {
+        list-style: none;
+        padding: 0 20px;
+        &:hover {
+            filter: brightness(0) invert(1);
+            transition: 0.5s;
+            &::after {
+                content: "";
+                border-bottom: 1px solid #fff;
+                display: block;
+                margin-top: 3px;
+            }
+        }
+    }
+}
+
+.camping-title {
+    @include font(#000, 35px);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 65px;
+    letter-spacing: 1px;
+    &:after {
+        content: "";
+        display: block;
+        border-bottom: 3px solid #ff0317;
+        width: 55px;
+        margin-top: 7px;
+    }
+}
+
+.my-athlets {
+    @include font(#000, 25px);
+    text-transform: uppercase;
+    margin-top: 40px;
+    font-weight: 400;
+}
+
+.circle {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.circle__item {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background-color: #cccccc;
+}
+
+.circle__color {
+    background-color: red;
+}
+
+.view-search-loc-sport {
+    display: flex;
+    margin-top: 125px;
+}
+
+.view {
+    display: flex;
+    align-items: center;
+}
+
+.view__text {
+    @include font(#000,25px);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.view__circle {
+    width: 24px;
+    height: 24px;
+    background-color: #ff0317;
+    border-radius: 50%;
+}
+
+.search__container {
+    padding: 0 30px;
+}
+
+.search {
+    width: 185px;
+    position: relative;
+    input {
+        border: none;
+    }
+    .input {
+        width: 100%;
+        padding: 8px 20px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        @include font(#000,15px);
+        text-transform: uppercase;
+        outline: none;
+        border: 1px solid #cecece;
+        &:focus {
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+            background: #E8E8E8;
+        }
+    }
+    .submit {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+    }
+}
+
+.loc-sport {
+    display: flex;
+    align-items: center;
+}
+
+.location {
+    @include font(#000,20px);
+    text-transform: uppercase;
+}
+
+.sport {
+    @include font(#000,20px);
+    text-transform: uppercase;
+}
+
+.bord {
+    border: 1px solid #cecece;
+    height: 50%;
+    margin: 0 15px;
+}
